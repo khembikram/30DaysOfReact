@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day 1 || Learning React</title>
+</head>
+
+<body>
+    <h3>How to import React in your computer</h3>
+    <ul>
+        <li>import react in your computer </li>
+        <li>using cdn as well</li>
+    </ul>
+    <pre>
+        Use the Following code to use react
+        inspect to more :- 
+         <!-- Script tags including React -->
+                <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+                <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    </pre>
+
+    <div id="app"></div>
+
+
+    <!-- Script tags including React -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+        ReactDOM.render(
+            <div>
+            <h1>Hello World</h1> 
+            <p>This is a simple printing the Hello world into the browser</p>
+            <h2>How does a react work</h2>
+            <p>React doesnot operate on the browser directly as it reolves the changes in the DOM and built in it,
+                then it first works on the users virtual DOM and then it manipulates on the original DOM on the browser.
+            </p> 
+            <div>
+                let's jump into the JSX to understand more about React and use the various React components.
+            </div>
+        </div>,
+            document.querySelector('#app')
+        );
+    </script>
+</body>
+
+
+</html>
